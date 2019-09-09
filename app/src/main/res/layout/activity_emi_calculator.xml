@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.EmiCalculatorActivity">
+
+
+    <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Loan Principal:"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorPrimaryFav" />
+
+                <EditText
+                    android:id="@+id/etPrincipalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="principal       "
+                    android:inputType="numberSigned"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Interest Rate(%)"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorPrimaryFav" />
+
+                <EditText
+                    android:id="@+id/etInterestRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="interest rate"
+                    android:padding="10dp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Tenure"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorPrimaryFav" />
+
+                <EditText
+                    android:id="@+id/etTenure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:hint="tenure"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTenure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimaryFav"
+                    android:outlineSpotShadowColor="@color/colorPrimaryFav"
+                    android:entries="@array/tenure"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/emiCalculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttons"
+                    android:padding="17dp"
+                    android:text="Calculate"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtEmi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:padding="10dp"
+            android:text="EMI:"
+            android:visibility="invisible"
+            android:textSize="17dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/etEmi"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginLeft="7dp"
+            android:hint="emi       "
+            android:inputType="number"
+            android:visibility="invisible"
+            android:padding="10dp" />
+    </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtTotalInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Total Interest Payable:"
+                android:textSize="17dp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/etTotalInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="7dp"
+                android:hint="Total Interest"
+                android:inputType="number"
+                android:visibility="invisible"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Total Amount Payable:"
+                android:textSize="17dp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/etTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="7dp"
+                android:hint="Total Amount"
+                android:visibility="invisible"
+                android:inputType="number"
+                android:padding="10dp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

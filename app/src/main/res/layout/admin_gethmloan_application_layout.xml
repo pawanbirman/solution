@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffcccb"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanapplication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Loan Type:"
+                android:layout_below="@+id/admin_dashboard_hmloanapplication_no"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanborrowerName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_hmloanType"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloancontactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_hmloanType"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Contact No:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Occupation:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_hmloancontactNo"
+                />
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanoldLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="viewEnd"
+                android:text="Old Loan:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_hmloancontactNo"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloannewLoanAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="New Loan Amount:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_hmloanoldLoan"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanmeetingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Meeting Time:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_hmloanoldLoan"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_hmloanaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Address:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_hmloanmeetingTime"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_hmloanaadhaarFront"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_hmloanmeetingTime"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_hmloanaadhaarBack"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_hmloanaadhaarFront"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_hmloanphoto"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_hmloanaadhaarBack"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_hmloanpancard"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_hmloanphoto"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

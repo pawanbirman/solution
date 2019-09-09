@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gurukulsolutions.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Quick Solution"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="QuickSolution">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login with your password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".User.DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".User.LoanApplicationActivity"
+            android:label="Application Form For Loan"
+            android:parentActivityName=".User.DashboardActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="QuickSolution">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin.AdminAddServicesActivity"
+            android:label="Add New Things "
+            android:parentActivityName=".Admin.AdminAddServicesActivity" />
+        <activity
+            android:name=".User.UserDashboardActivity"
+            android:label="Your Applications"
+            android:parentActivityName=".User.DashboardActivity" />
+        <activity
+            android:name=".User.HMLoanApplicationActivity"
+            android:label="Loan Application"
+            android:parentActivityName=".User.DashboardActivity" />
+        <activity
+            android:name=".User.UploadDocumentForLoanActivity"
+            android:label="Upload your Document" />
+        <activity
+            android:name=".User.IncomeTaxReturnActivity"
+            android:label="Income Tax Return"
+            />
+        <activity
+            android:name=".User.InsuranceActivity"
+            android:label="Apply for Car/Bike Insurance "
+            android:parentActivityName=".User.DashboardActivity" />
+        <activity
+            android:name=".Admin.AdminDashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin.AdminGetPBLoanApplicationsActivity"
+            android:label="Personal/Business Loan Application "
+            android:parentActivityName=".Admin.AdminDashboardActivity" />
+        <activity
+            android:name=".Admin.AdminGetHMLoanApplicationsActivity"
+            android:label="Home/Mortgage Loan Application "
+            android:parentActivityName=".Admin.AdminDashboardActivity" />
+        <activity
+            android:name=".Admin.AdminGetITRApplicationsActivity"
+            android:label="ITR Application "
+            android:parentActivityName=".Admin.AdminDashboardActivity" />
+        <activity
+            android:name=".Admin.AdminGetInsuranceApplicationsActivity"
+            android:label="Insurance Application "
+            android:parentActivityName=".Admin.AdminDashboardActivity" />
+        <activity
+            android:name=".User.EmiCalculatorActivity"
+            android:label="Calculate your EMI "
+            android:parentActivityName=".User.DashboardActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".User.LocationActivity"
+            android:label="@string/title_activity_location" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="Reset Password "
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".RegisterWithOtpActivity"
+            android:label="Create New Account "
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QuicklyLoanActivity"
+            android:label="Quickly Loan "
+            android:parentActivityName=".User.DashboardActivity" />
+        <activity android:name=".SettingsNewActivity" />
+        <activity android:name=".QsPartnerActivity"></activity>
+    </application>
+
+</manifest>

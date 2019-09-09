@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33FFE3"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/admin_dashboard_itrapplication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_itrapplicationType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application Type:"
+                android:layout_below="@+id/admin_dashboard_itrapplication_no"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_itrTaxPayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_itrapplicationType"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_itrcontactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_itrapplicationType"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Contact No:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_itrEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Email :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_itrTaxPayerName"
+                />
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_itraadhaarno"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="AADHAAR No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_itrEmail"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_itrpanno"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="PAN Card No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_itraadhaarno"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

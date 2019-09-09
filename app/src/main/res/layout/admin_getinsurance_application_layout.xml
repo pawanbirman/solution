@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#39a4c6"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/admin_dashboard_insuranceapplication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application No:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_insuranceApplicationType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application Type:"
+                android:layout_below="@+id/admin_dashboard_insuranceapplication_no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_insuranceOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_insuranceApplicationType"
+                android:text="Owner Name:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_insurancecontactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_insuranceApplicationType"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Contact No:"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_insurancevehicletype"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Vehicle Type:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_insuranceOwnerName"
+                />
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_insuranceType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Insurance Type:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_insurancevehicletype"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_insuranceExpirydateofpolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Expiry Date Of Current Policy:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_insuranceType"
+                />
+
+            <ImageView
+                android:id="@+id/admin_dashboard_insuranceRCFront"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_insuranceExpirydateofpolicy"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_insuranceRCBack"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_insuranceRCFront"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

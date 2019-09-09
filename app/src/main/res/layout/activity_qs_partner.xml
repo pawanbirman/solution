@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QsPartnerActivity">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:hint="Welcome Partner !"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Name:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Contact Number:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Contact number"
+                    android:inputType="phone"
+                    android:digits="0123456789+"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Email Address"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Date of Birth:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:hint="dd/mm/yyyy"
+                    android:inputType="date"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Gender:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:hint="Male"
+                        android:textColorHint="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Female"
+                        android:textColorHint="@color/colorPrimary" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textAadharNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Aadhar number:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextAadharNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Adhar number"
+                    android:inputType="number"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textPanCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="PAN card:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextPanCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="PAN card number"
+                    android:padding="10dp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textBankDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Bank Detail"
+                    android:textColor="@color/colorPrimaryDark" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textBankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Bank Name:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/autoCompleteBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Bank name"
+                    android:padding="10dp"/>
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textACNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Account Number:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextACNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Account Number"
+                    android:inputType="number"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textIFSC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="IFSC Code:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/editTextIFSC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="IFSC Code"
+                    android:inputType="text"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                <Button
+                    android:id="@+id/QSPartnerSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttons_new"
+                    android:padding="17dp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

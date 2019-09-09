@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".RegisterWithOtpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <com.shuhart.stepview.StepView
+                android:id="@+id/step_view"
+                android:layout_width="209dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:sv_animationType="All"
+                app:sv_stepPadding="12dp"
+                app:sv_steps="@array/steps"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_username_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_design"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <EditText
+                    android:id="@+id/register_phone_number_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_username_input"
+                    android:background="@drawable/input_design"
+                    android:hint="Phone Number"
+                    android:inputType="phone|number"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <EditText
+                    android:id="@+id/register_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_phone_number_input"
+                    android:background="@drawable/input_design"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+                <EditText
+                    android:id="@+id/confirm_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_password_input"
+                    android:background="@drawable/input_design"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+                <EditText
+                    android:id="@+id/register_security_que_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirm_password_input"
+                    android:background="@drawable/input_design"
+                    android:hint="Security Q: What is your mother's name ?"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+                <TextView
+                    android:id="@+id/register_textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/register_security_que_input"
+                    android:fontFamily="sans-serif"
+                    android:text="Tap Next to verify your account with your phone number. You don't need to manualy enter verification code if the number install in this phone..."/>
+
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_textView1"
+                    android:background="@drawable/buttons"
+                    android:text="NEXT"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Enter the code that was send to"/>
+            <TextView
+                android:id="@+id/phonenumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+918372890302"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#019b77"
+                android:textStyle="bold"/>
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:cursorVisible="true"
+                app:cursorColor="@color/colorAccent"
+                app:cursorWidth="2dp"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="5dp"
+                app:itemWidth="36dp"
+                app:lineColor="#2f64ba"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_main_background"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/submit2"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="continue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap Continue to accept our Terms,Data Policy, cookie use and the Privacy Policy and Terms of Service..."
+                android:textAlignment="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

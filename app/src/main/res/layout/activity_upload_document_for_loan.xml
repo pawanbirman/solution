@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UploadDocumentForLoanActivity">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:hint="Please Upload Documents..."
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/loanll1"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/insuranceText1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/product_name1"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:text="Aadhaar Card Front"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:textSize="25dp" />
+
+
+                <ImageView
+                    android:id="@+id/select_aadharcardFront"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="50dp"
+                    android:cropToPadding="false"
+                    android:src="@drawable/adhar_card" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/loanll2"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/loanll1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/product_name2"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:text="Aadhaar Card Back"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:textSize="25dp" />
+
+
+                <ImageView
+                    android:id="@+id/select_aadharcardBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:cropToPadding="false"
+                    android:src="@drawable/adhar_card" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loanll3"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/loanll2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/product_name4"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:text="Passport size photo"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:textSize="25dp" />
+
+
+                <ImageView
+                    android:id="@+id/select_yourphoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:cropToPadding="false"
+                    android:src="@drawable/profile" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/loanll4"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/loanll3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/product_name3"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:text="PAN Card Photo"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryFav"
+                    android:textSize="25dp" />
+
+
+                <ImageView
+                    android:id="@+id/select_pancard"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pancard_service" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/loanDocumentUpload_btn"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/scroll1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:padding="17dp"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

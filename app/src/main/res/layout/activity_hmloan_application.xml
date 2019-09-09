@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.HMLoanApplicationActivity">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:hint="Please fill the following Application Form"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textBorrowerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Name:"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <EditText
+                    android:id="@+id/etHMBorrowerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Contact Number:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/etHMContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Contact number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textOccupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Occupation"
+                    android:textColor="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/HMspinnerOccupation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/occupation"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textLoanExist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Old Loan"
+                    android:textColor="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/HMspinnerLoan"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/yesNo"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textNewLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="New loan amount"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/etHMNewLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Request loan amount"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Address"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_column="1"/>
+
+                <EditText
+                    android:id="@+id/etHMAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Address"
+                    android:padding="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_column="2"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:maxLines="5"
+                    android:maxLength="50"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textMeetingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time For Meeting"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_column="1"/>
+
+                <EditText
+                    android:id="@+id/etHMMeetingTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Write time for meeting"
+                    android:padding="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_column="2"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:maxLines="5"
+                    android:maxLength="50"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    />
+            </TableRow>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:id="@+id/HMloanApplicationSubmit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttons_new"
+                    android:padding="17dp"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+        </TableLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

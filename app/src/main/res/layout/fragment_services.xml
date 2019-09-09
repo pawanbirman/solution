@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".ServicesFragment"
+    >
+    <TextView
+        android:id="@+id/welcome_user_name"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Select below service"
+        android:textColor="#39a4c6"
+        android:textColorHint="@android:color/white"
+        android:textSize="19sp"/>
+
+    <Button
+        android:id="@+id/service_personal_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@id/welcome_user_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Personal Loan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+         />
+
+    <Button
+        android:id="@+id/service_business_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@+id/service_personal_btn"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Business Loan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+         />
+
+    <Button
+        android:id="@+id/service_home_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@id/service_business_btn"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Home Loan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/service_mortage_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@id/service_home_btn"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Mortage Loan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+         />
+    <Button
+        android:id="@+id/service_incometaxreturn_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@id/service_mortage_btn"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Income Tax Return"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/service_insurance_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/service_incometaxreturn_btn"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Insurance"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/service_status_btn"
+        android:layout_width="291dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_below="@id/service_insurance_btn"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:text="Your DashBoard.."
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+
+         />
+
+
+</RelativeLayout>

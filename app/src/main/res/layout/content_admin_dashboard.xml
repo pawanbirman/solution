@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Admin.AdminDashboardActivity"
+    tools:showIn="@layout/app_bar_admin_dashboard">
+
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add New Ideas"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1_admin_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/admin_service_loan"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_loan"
+            />
+
+        <ImageView
+            android:id="@+id/admin_service_onlineservice"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_onlineservices" />
+
+        <ImageView
+            android:id="@+id/admin_service_insurance"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_insurance"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_admin_service_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+
+        <ImageView
+            android:id="@+id/admin_service_rto"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_rto"
+            />
+
+        <ImageView
+            android:id="@+id/admin_service_career"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_career_24dp"
+            />
+
+        <ImageView
+            android:id="@+id/admin_service_incometaxreturn"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_emicalculator" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

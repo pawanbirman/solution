@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/admin_dashboard_loanapplication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Application No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loanType"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Loan Type:"
+                android:layout_below="@+id/admin_dashboard_loanapplication_no"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loanborrowerName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_loanType"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loancontactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_loanType"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Contact No:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:id="@+id/admin_dashboard_loandob"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_loanborrowerName"
+                android:text="DOB:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loangender"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/admin_dashboard_loanborrowerName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Gender:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loanOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Occupation:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loangender"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loannetSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Net Salary:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loangender"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loanDOJ"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="DOJ:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanOccupation"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loancompanyName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Company Name:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanOccupation"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loanoldLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Old Loan:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanDOJ"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loanoldLoanAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Old Loan Amount:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanDOJ"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loannewLoanAmount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="New Loan Amount:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanoldLoanAmount"
+                />
+
+            <TextView
+                android:id="@+id/admin_dashboard_loanmeetingTime"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:text="Meeting Time:"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanoldLoanAmount"
+                />
+            <TextView
+                android:id="@+id/admin_dashboard_loanaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_below="@id/admin_dashboard_loanmeetingTime"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_loanaadhaarFront"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_loanaddress"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_loanaadhaarBack"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_loanaadhaarFront"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_loanphoto"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_loanaadhaarBack"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/admin_dashboard_loanpancard"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:cropToPadding="false"
+                android:layout_below="@+id/admin_dashboard_loanphoto"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

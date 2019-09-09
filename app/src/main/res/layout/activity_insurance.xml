@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.InsuranceActivity">
+
+    <TextView
+        android:id="@+id/InsuranceWelcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:hint="Please fill the following Application Form"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InsuranceWelcome_msg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <TableLayout
+            android:id="@+id/InsurancetableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtInsuranceOwnerNme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Name:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/etInsuranceOwnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtInsuranceContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Contact Number:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/etInsuranceContactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Contact number"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtInsuranceVehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Vehicle Type"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:id="@+id/radioInsurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/Two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:hint="Two Wheel"
+                        android:textColorHint="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/Four"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Four Wheel"
+                        android:textColorHint="@color/colorPrimary" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtInsuranceType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Insurance Type"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:id="@+id/radioInsuranceType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/FirstParty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:hint="First Party"
+                        android:textColorHint="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/ThirdParty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Third Party"
+                        android:textColorHint="@color/colorPrimary" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textDateOfJoining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="Ins. Expiry Date "
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/etInsuranceExpiryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="dd/mm/yyyy"
+                    android:inputType="date"
+                    android:padding="10dp" />
+            </TableRow>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/insuranceText1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Upload Following Documents.."
+                    android:textColorHint="#39a4c6"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/insuranceText1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/product_name1"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:text="RC Front Photo"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp" />
+
+
+                    <ImageView
+                        android:id="@+id/select_RCFront"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_photo_camera" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/product_name2"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:text="RC Back Photo"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25dp" />
+
+
+                    <ImageView
+                        android:id="@+id/select_RCBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/select_RCFront"
+                        android:layout_centerHorizontal="true"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_photo_camera" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/InsuranceApplicationSubmit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/ll2"
+                    android:background="@drawable/buttons_new"
+                    android:padding="17dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

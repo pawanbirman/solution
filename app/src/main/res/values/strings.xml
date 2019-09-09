@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Solutions</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="occupation">
+        <item>Select occupation</item>
+        <item>Private Job</item>
+        <item>Govt. Job</item>
+        <item>Business</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="yesNo">
+        <item>Please select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="itryesno">
+        <item>Please select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="tenure">
+        <item>Years</item>
+        <item>Months</item>
+    </string-array>
+   <string-array name="bank_name">
+       <item>SBI</item>
+       <item>ICICI</item>
+       <item>Standard Chartered</item>
+       <item>Other</item>
+   </string-array>
+    <string name="title_activity_upload_document_for_loan">UploadDocumentForLoan</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="title_activity_location">Map</string>
+</resources>
